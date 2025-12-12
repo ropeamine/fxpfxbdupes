@@ -1,4 +1,10 @@
 #!/usr/bin/env zsh
+set -e
+
+if [[ "$(uname)" != "Darwin" ]]; then
+  echo "This script runs only on macOS."
+  exit 1
+fi
 
 DUP=~/Desktop/Duplicates_$(date +%Y%m%d_%H%M%S)
 LOG=~/Desktop/Duplicates_$(date +%Y%m%d_%H%M%S).log
