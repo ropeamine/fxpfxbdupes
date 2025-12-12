@@ -1,5 +1,5 @@
 # fxpfxbdupes
-identify and move duplicate fxp/fxb files rom the default Sylenth1 directory on macOS
+identify and move duplicate fxp/fxb files from the default Sylenth1 directory on macOS
 
 to run open Terminal and run the following command:
 
