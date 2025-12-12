@@ -1,6 +1,4 @@
 #!/usr/bin/env zsh
-set -e
-setopt extended_glob
 
 if [[ "$(uname)" != "Darwin" ]]; then
   echo "This script runs only on macOS."
@@ -40,4 +38,4 @@ for c l in ${(kv)f}; do
 done
 
 echo "Processed $t files, moved $d duplicates."
-} 2>&1 | tee "$LOG"
+} | tee "$LOG"
