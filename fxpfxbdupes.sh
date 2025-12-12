@@ -1,5 +1,6 @@
 #!/usr/bin/env zsh
 set -e
+setopt extended_glob
 
 if [[ "$(uname)" != "Darwin" ]]; then
   echo "This script runs only on macOS."
