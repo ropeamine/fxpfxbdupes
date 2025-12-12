@@ -31,4 +31,4 @@ for c l in ${(kv)f}; do
   done <<< "$l"
 done
 echo "Processed $t files, moved $d duplicates."
-} | tee "$LOG"
+} | 2>&1 | tee "$LOG"
